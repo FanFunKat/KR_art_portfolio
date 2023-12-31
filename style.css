@@ -12,3 +12,10 @@ body {
 a {
   text-decoration: none;
 }
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
