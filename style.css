@@ -83,12 +83,40 @@ body {
 }
 
 .landing-page__box {
-  display: flex;
+  /* display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 10px; */
+  display: grid;
+  /* grid-template-columns: repeat(2, 1fr); */
+  grid-template-columns: repeat(auto-fill, minmax(49.5%, 1fr));
+  /* grid-template-rows: auto; */
+  justify-content: center;
+  place-items: center;
+  grid-gap: 10px;
 }
 
+.landing-page_title {
+  font-weight: 700;
+  letter-spacing: -0.05rem;
+  font-size: 4.8vw;
+  text-align: end;
+  font-style: italic;
+  line-height: 1.3em;
+  align-self: center;
+}
 
+.landing-page_title b {
+  font-style: normal;
+}
+
+.landing-page__img {
+  background-color: rgb(18, 168, 151);
+  height: 70vh;
+  width: 100%;
+  /* border: 5px solid #000; */
+  object-fit: cover;
+}
 
 .examples {
   width: 70%;
