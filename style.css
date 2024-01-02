@@ -9,11 +9,6 @@ body {
   width: 100%;
 }
 
-a {
-  text-decoration: none;
-  color: black;
-}
-
 .header {
   background-color: lightpink;
   display: flex;
@@ -28,8 +23,50 @@ a {
   align-items: center;
 }
 
+.logo__box,
+.nav__item--link {
+  text-decoration: none;
+  color: black;
+}
+
 .logo {
-  display: inline-block;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 7px;
+  padding: 7px 0;
+}
+
+.logo__img {
+  width: 50px;
+}
+
+.logo__name {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.nav {
+  max-width: 50%;
+  min-width: 40%;
+  background-color: blueviolet;
+}
+
+.nav__items {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 50px;
+}
+
+.nav__item--link {
+  font-size: 1.5rem;
+  padding: 7px 0 5px;
+}
+
+.nav__item--link:hover {
+  border-bottom: 3px solid black;
 }
 
 .main {
@@ -58,7 +95,7 @@ a {
 
 .pricing {
   width: 70%;
-  background-color: rgb(0, 139, 93);
+  background-color: rgb(23, 221, 165);
 }
 
 .pricing__box {
