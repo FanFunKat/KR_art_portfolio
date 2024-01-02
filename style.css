@@ -88,9 +88,29 @@ body {
   align-items: center;
 }
 
+
+
 .examples {
   width: 70%;
   background-color: darkcyan;
+}
+
+.examples__box {
+  display: grid;
+  /* grid-template-columns: repeat(4, 1fr); */
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  /* grid-template-rows: auto; */
+  justify-content: center;
+  place-items: center;
+  grid-gap: 10px;
+}
+
+.example__img {
+  background-color: aquamarine;
+  height: 260px;
+  width: 100%;
+  /* border: 5px solid #000; */
+  object-fit: cover;
 }
 
 .pricing {
