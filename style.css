@@ -1,3 +1,14 @@
+:root {
+  --background-color-0: rgba(255, 255, 255, 1);
+  --background-color-1: #babdbf;
+  --background-color-2: #2b3c40;
+  --background-color-3: #587073;
+  --background-color-4: #ffbc93;
+  --background-color-5: #777cd8;
+  --background-gradient: linear-gradient(to right bottom, #ee87ae, #c47cc7, #777cd8);
+  --background-gradient-2: linear-gradient(to right bottom, #ffbc93, #777cd8);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -7,10 +18,16 @@
 body {
   font-family: 'Open Sans', sans-serif;
   width: 100%;
+  background-color: var(--background-color-0);
+  background-image: url(./image/tloooo4.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 .header {
-  background-color: lightpink;
+  background-color: var(--background-color-0);
   display: flex;
   justify-content: center;
   width: 100%;
@@ -18,7 +35,7 @@ body {
 }
 
 .header__box {
-  background-color: rgb(245, 121, 142);
+  /* background-color: rgb(245, 121, 142); */
   width: 70%;
   display: flex;
   justify-content: space-between;
@@ -51,7 +68,7 @@ body {
 .nav {
   max-width: 50%;
   min-width: 49.5%;
-  background-color: blueviolet;
+  /* background-color: blueviolet; */
 }
 
 .nav__items {
@@ -64,11 +81,12 @@ body {
 
 .nav__item--link {
   font-size: 1.5rem;
+  font-weight: 600;
   padding: 7px 0 5px;
 }
 
 .nav__item--link:hover {
-  border-bottom: 3px solid black;
+  border-bottom: 4px solid var(--background-color-5);
 }
 
 .main {
@@ -76,12 +94,12 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: aquamarine;
+  /* background-color: aquamarine; */
 }
 
 .landing-page {
   width: 70%;
-  background-color: rgb(23, 221, 165);
+  /* background-color: rgb(23, 221, 165); */
 }
 
 .landing-page__box {
@@ -114,17 +132,27 @@ body {
   font-weight: 900;
 }
 
+.landing-page_title b:last-child {
+  text-decoration: underline;
+  background-image: var(--background-gradient);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  letter-spacing: 0;
+}
+
 .landing-page__img {
   background-color: rgb(18, 168, 151);
   height: 85vh;
   width: 100%;
   /* border: 5px solid #000; */
   object-fit: cover;
+  border-radius: 20px;
 }
 
 .examples {
   width: 70%;
-  background-color: darkcyan;
+  /* background-color: darkcyan; */
 }
 
 .examples__box {
@@ -135,7 +163,7 @@ body {
   justify-content: center;
   place-items: center;
   grid-gap: 10px;
-  margin: 10vh 0 5vh;
+  margin: 15vh 0 5vh;
 }
 
 .example__img {
@@ -143,11 +171,12 @@ body {
   height: 260px;
   width: 100%;
   object-fit: cover;
+  border-radius: 10px;
 }
 
 .pricing {
   width: 70%;
-  background-color: rgb(23, 221, 165);
+  /* background-color: rgb(23, 221, 165); */
 }
 
 .pricing__box {
@@ -156,7 +185,7 @@ body {
   flex-wrap: wrap;
   gap: 75px;
   padding: 0 50px;
-  margin: 10vh 0 5vh;
+  margin: 10vh 0 15vh;
 }
 
 .box {
@@ -165,43 +194,48 @@ body {
   flex-direction: column;
   align-items: center;
   border-radius: 20px;
-  background-color: aqua;
-  padding: 1.5rem 1.5rem 2rem;
+  background-color: var(--background-color-0);
+  padding: 2rem 1.5rem 3rem;
   width: 270px;
   min-width: 270px;
+  box-shadow: -5px 5px 10px var(--background-color-3);
+  /* border: 1px solid var(--background-color-4); */
 }
 
 .box__name {
   font-size: 2rem;
   font-weight: 700;
-  margin: 0rem auto 1.5rem;
+  margin: 0rem auto 2rem;
   text-align: center;
+  color: var(--background-color-5);
 }
 
 .box__price {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: blue;
+  background-color: #878bdc;
+  box-shadow: inset 0 0 20px 5px var(--background-color-5);
   font-size: 2.5rem;
-  font-weight: 900;
+  font-weight: 700;
   text-align: center;
   line-height: 1.5rem;
   padding: 2rem 0;
   width: 140%;
   /* height: 30%; */
   border-radius: 10rem;
+  color: var(--background-color-0)
 }
 
 .box__offers {
   font-size: 1.5rem;
-  line-height: 2rem;
+  line-height: 3rem;
   list-style-position: inside;
+  margin: 2.5rem auto 0;
 }
 
 .offer__condition {
   list-style-type: none;
-  margin: 1.5rem auto 0.5rem;
 }
 
 .offer__condition::before {
@@ -215,7 +249,11 @@ body {
 }
 
 .footer {
-  background-color: lightyellow;
+  background-color: var(--background-color-5);
+  color: var(--background-color-0);
   display: flex;
   justify-content: center;
+  align-items: center;
+  height: 40px;
+  max-height: 50px;
 }
