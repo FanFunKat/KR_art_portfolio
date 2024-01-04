@@ -50,7 +50,7 @@ body {
 
 .nav {
   max-width: 50%;
-  min-width: 40%;
+  min-width: 49.5%;
   background-color: blueviolet;
 }
 
@@ -160,10 +160,39 @@ body {
 }
 
 .box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
   flex: 1;
-  border-radius: 10px;
+  border-radius: 20px;
   background-color: aqua;
+  height: 70vh;
 }
+
+.box__name {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin: 1.5rem auto;
+  text-align: center;
+}
+
+.box__price {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: blue;
+  font-size: 2.5rem;
+  font-weight: 900;
+  text-align: center;
+  line-height: 1.5rem;
+  padding: auto;
+  width: 120%;
+  height: 6rem;
+  border-radius: 20px;
+}
+
+.box__offer {}
 
 .footer {
   background-color: lightyellow;
