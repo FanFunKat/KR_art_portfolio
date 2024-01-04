@@ -154,26 +154,27 @@ body {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-  gap: 50px;
+  gap: 75px;
   padding: 0 50px;
   margin: 10vh 0 5vh;
 }
 
 .box {
+  flex: 0 0 calc(33.33% - 75px);
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-evenly;
-  flex: 1;
   border-radius: 20px;
   background-color: aqua;
-  height: 70vh;
+  padding: 1.5rem 1.5rem 2rem;
+  width: 270px;
+  min-width: 270px;
 }
 
 .box__name {
-  font-size: 1.5rem;
-  font-weight: 500;
-  margin: 1.5rem auto;
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 0rem auto 1.5rem;
   text-align: center;
 }
 
@@ -186,13 +187,32 @@ body {
   font-weight: 900;
   text-align: center;
   line-height: 1.5rem;
-  padding: auto;
-  width: 120%;
-  height: 6rem;
-  border-radius: 20px;
+  padding: 2rem 0;
+  width: 140%;
+  /* height: 30%; */
+  border-radius: 10rem;
 }
 
-.box__offer {}
+.box__offers {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  list-style-position: inside;
+}
+
+.offer__condition {
+  list-style-type: none;
+  margin: 1.5rem auto 0.5rem;
+}
+
+.offer__condition::before {
+  content: "\25CB";
+  margin-right: 8px;
+}
+
+.box:last-child .offer__condition::before {
+  content: "\25CF";
+  margin-right: 8px;
+}
 
 .footer {
   background-color: lightyellow;
