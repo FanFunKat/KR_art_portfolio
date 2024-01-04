@@ -1,5 +1,5 @@
-# KR_art_portfolio
-Website with a portfolio of graphic works and paintings.
+# KR_art_portfolio = PhotoToTo
+Strona internetowa dla studia fotograficznego.
 Strona na bazie warsztatów z bootcamp Frontend Info Share Akademy.
 Kolejne etapy tworzenia strony opisano poniżej.
 
