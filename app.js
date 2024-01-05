@@ -1,6 +1,6 @@
 const image = document.querySelectorAll(".example__img");
 const main = document.querySelector('.main');
-// const productCard = document.getElementById('productCard');
+const productCard = document.getElementById('productCard');
 // const cardCloseBtn = document.querySelector(".form__close");
 // const buyBtn = document.querySelector("#formBuy");
 
@@ -8,6 +8,7 @@ const main = document.querySelector('.main');
 image.forEach((img) => {
   img.addEventListener('click', () => {
     main.classList.add('show');
+    productCard.classList.add('show');
   })
 })
 

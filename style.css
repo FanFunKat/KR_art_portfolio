@@ -289,13 +289,19 @@ body {
   border-radius: 20px;
   padding: 1rem;
   position: fixed;
-  max-width: 700px;
-  min-width: 270px;
-  /* width: 100%; */
+  width: 700px;
+  /* max-width: 700px;
+  min-width: 270px; */
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%) scale(1);
+  transform: translate(-50%, -50%);
   z-index: 100;
+  display: none;
+}
+
+.product__card.show {
+  display: grid;
+  pointer-events: auto;
 }
 
 .form__img {
@@ -303,8 +309,8 @@ body {
   background-color: var(--background-color-5);
   width: 100%;
   object-fit: cover;
-  min-height: 200px;
-  max-height: 280px;
+  /* min-height: 200px;
+  max-height: 280px; */
 }
 
 .form_card {
@@ -316,14 +322,18 @@ body {
 }
 
 .form__close--btn {
-  position: relative;
-  top: 0;
-  left: 200px;
+  position: absolute;
+  width: 100%;
+  top: calc(50% - 112.2px);
+  left: calc(50% + 310px);
   color: var(--background-color-3);
   font-size: 22px;
   opacity: 0.7;
   cursor: pointer;
   width: 25px;
+  border: none;
+  outline: none;
+  background-color: transparent;
 }
 
 .form__buy {
@@ -335,6 +345,24 @@ body {
   font-weight: 600;
   height: 2.8rem;
   border: none;
+  outline: none;
   border-radius: 50px;
   background-color: var(--background-color-5);
+  cursor: pointer;
+}
+
+.form__title,
+.form__price {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.form__hash {
+  display: inline-block;
+  height: 2rem;
+  border: 1px solid var(--background-color-5);
+  color: var(--background-color-3);
+  border-radius: 2rem;
+  padding: 0.1rem 1rem 0;
+  margin-top: 1rem;
 }
