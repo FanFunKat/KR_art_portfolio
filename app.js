@@ -1,7 +1,7 @@
 const image = document.querySelectorAll(".example__img");
 const main = document.querySelector('.main');
 const productCard = document.getElementById('productCard');
-// const cardCloseBtn = document.querySelector(".form__close");
+const cardCloseBtn = document.querySelector(".form__close--btn");
 // const buyBtn = document.querySelector("#formBuy");
 
 
@@ -10,6 +10,10 @@ image.forEach((img) => {
     main.classList.add('show');
     productCard.classList.add('show');
   })
+})
+
+cardCloseBtn.addEventListener('click', () => {
+  productCard.classList.remove('show');
 })
 
 // img.addEventListener("click", () => main.classList.add("show"))
