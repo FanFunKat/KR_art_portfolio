@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="style.css">
   <link rel="icon" type="image/svg+xml" href="favicon/favicon.svg">
   <link rel="icon" type="image/png" href="favicon/favicon.png">
+  <script src="https://kit.fontawesome.com/3bfb2b9d7b.js" crossorigin="anonymous"></script>
   <script defer src="app.js"></script>
 </head>
 <body>
@@ -79,7 +80,28 @@
         </div>
       </div>
     </section>
+    <form action="#" id="productCard" class="product__card">
+      <input type="image" alt="cat" src="image/cat.jpg" class="form__img">
+      <div class="form_card">
+        <div class="form_information">
+          <button class="form__close--btn"><i class="fa-solid fa-xmark form-close"></i></button>
+          <h2 class="form__title">Title</h2>
+          <p class="form__price">$10</p>
+          <span class="form__hash">#tag1</span>
+          <span class="form__hash">#tag1</span>
+        </div>
+        <button id="formBuy" class="form__buy">Add to basket</button>
+      </div>
+    </form>
   </main>
+
+  <!-- <div id="magicBox" class="magic_box"></div> -->
+  <!-- <section class="home">
+
+    <div id="errorCard" class="error-card">
+      <i class="fa-solid fa-xmark form-close"></i>
+    </div>
+  </section> -->
   <footer class="footer">
     <p class="footer__par">&copy; 2024 Company Name. All rights reserved.</p>
   </footer>
