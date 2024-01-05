@@ -2,7 +2,9 @@ const image = document.querySelectorAll(".example__img");
 const main = document.querySelector('.main');
 const productCard = document.getElementById('productCard');
 const cardCloseBtn = document.querySelector(".form__close--btn");
-// const buyBtn = document.querySelector("#formBuy");
+const errorCard = document.getElementById('errorCard');
+const errorCloseBtn = document.querySelector(".error__close--btn");
+const buyBtn = document.getElementById('formBuy');
 
 
 image.forEach((img) => {
@@ -12,9 +14,19 @@ image.forEach((img) => {
   })
 })
 
-cardCloseBtn.addEventListener('click', () => {
+buyBtn.addEventListener('click', () => {
+  productCard.classList.remove('show');
+  errorCard.classList.add('show');
+})
+
+cardCloseBtn.addEventListener('click', (e) => {
   main.classList.remove('show');
   productCard.classList.remove('show');
+})
+
+errorCloseBtn.addEventListener('click', () => {
+  main.classList.remove('show');
+  errorCard.classList.remove('show');
 })
 
 // img.addEventListener("click", () => main.classList.add("show"))
