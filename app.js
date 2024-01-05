@@ -13,6 +13,7 @@ image.forEach((img) => {
 })
 
 cardCloseBtn.addEventListener('click', () => {
+  main.classList.remove('show');
   productCard.classList.remove('show');
 })
 
