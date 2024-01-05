@@ -5,29 +5,32 @@ const cardCloseBtn = document.querySelector(".form__close--btn");
 const errorCard = document.getElementById('errorCard');
 const errorCloseBtn = document.querySelector(".error__close--btn");
 const buyBtn = document.getElementById('formBuy');
+const inputImage = document.querySelector('.form__img')
 
+const title = document.getElementsByClassName('form__title')
 
 image.forEach((img) => {
-  img.addEventListener('click', () => {
+  img.addEventListener('click', (e) => {
+    inputImage.src = `${e.target.src}`;
     main.classList.add('show');
     productCard.classList.add('show');
   })
-})
+});
 
 buyBtn.addEventListener('click', () => {
   productCard.classList.remove('show');
   errorCard.classList.add('show');
-})
+});
 
 cardCloseBtn.addEventListener('click', (e) => {
   main.classList.remove('show');
   productCard.classList.remove('show');
-})
+});
 
 errorCloseBtn.addEventListener('click', () => {
   main.classList.remove('show');
   errorCard.classList.remove('show');
-})
+});
 
 // img.addEventListener("click", () => main.classList.add("show"))
 // const image = document.querySelectorAll(".example__img");
