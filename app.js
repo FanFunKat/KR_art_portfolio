@@ -47,3 +47,11 @@ errorCloseBtn.addEventListener('click', () => {
   main.classList.remove('show');
   errorCard.classList.remove('show');
 });
+
+document.addEventListener('keydown', function (e) {
+  if (e.key === 'Escape') {
+    productCard.classList.remove('show');
+    main.classList.remove('show');
+    errorCard.classList.remove('show');
+  }
+});
