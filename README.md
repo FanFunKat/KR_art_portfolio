@@ -7,50 +7,50 @@ Kolejne etapy tworzenia strony opisano poniżej.
 
 Tzw. _landing page_ to najczęściej pierwsze co widzimy wchodząc na daną stronę internetową. 
 Co taka strona powinna zawierać?
-- [ ] Tytuł 
+- [x] Tytuł 
   widoczny na karcie przeglądarki
 
-- [ ] Ikonę - favicon
+- [x] Ikonę - favicon
   widoczną na karcie przeglądarki
 
-- [ ] Nagłówek
+- [x] Nagłówek
   przyklejony do góry strony, zawierający:
 
-  - [ ] logo
+  - [x] logo
     może to być też ta sama ikona co na karcie przeglądarki oraz nazwa firmy lub projektu
 
-  - [ ] linki
+  - [x] linki
     służące do szybkiej nawigacji po stronie, możecie je dodać na koniec lub podczas tworzenia nowych sekcji
 
-- [ ] Krótką zachętę do pozostania na stronie
+- [x] Krótką zachętę do pozostania na stronie
   Często sprowadza się to do sloganu lub jednej, zwykłej frazy podsumowującej, czym zajmuje się dana firma lub czego dotyczy projekt.
   Dodatkowym elementem estetycznym może być zdjęcie lub symboliczna grafika znajdująca się obok.
 
-- [ ] Ogólne informacje mówiące o tym, co możemy zaoferować
+- [x] Ogólne informacje mówiące o tym, co możemy zaoferować
   W naszym przypadku będzie to siatka zdjęć z portfolio.
 
-- [ ] Cennik
+- [x] Cennik
   Czyli jedna z kluczowych informacji dla odwiedzającego.
 
 ## 2. Informacje o zdjęciu
 
 Po kliknięciu zdjęcia powinna pojawić się karta produktu zawierająca podstawowe informacje:
-- tytuł
-- tagi
-- lokalizacja
-- przycisk zamknięcia karty (po kliknięciu powinna zniknąć)
-- przycisk zakupu
+- [x] tytuł
+- [x] tagi
+- [ ] lokalizacja
+- [x] przycisk zamknięcia karty (po kliknięciu powinna zniknąć)
+- [x] przycisk zakupu - zamieniony w pkt.3. na 'Add to basket'
 
-Karta powinna zniknąć po wciśnięciu `esc`.
+- [ ] Karta powinna zniknąć po wciśnięciu `esc`.
 
-Po kliknięciu przycisku _Kup_ powinien zostać wyświetlony komunikat o wystąpieniu problemu podczas dokonywania zakupu.
+- [x] Po kliknięciu przycisku _Kup_ powinien zostać wyświetlony komunikat o wystąpieniu problemu podczas dokonywania zakupu.
 
 ## 3. Dodanie produktu do koszyka
 
 Okienko podglądu zdjęcia powinno zostać zmodyfikowane, by zawierało formularz z:
-- niemodyfikowalnym tytułem (nazwą produktu),
-- niemodyfikowalną wartością produktu (np. $10),
-- przyciskiem dodania do koszyka.
+- [x] niemodyfikowalnym tytułem (nazwą produktu),
+- [x] niemodyfikowalną wartością produktu (np. $10),
+- [x] przyciskiem dodania do koszyka.
 
 Po kliknięciu przycisku dodania do koszyka podstawowe informacje o zdjęciu wraz z ceną powinny zostać zapisane w [Local Storage](https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage).
 
