@@ -41,7 +41,7 @@ Po kliknięciu zdjęcia powinna pojawić się karta produktu zawierająca podsta
 - [x] przycisk zamknięcia karty (po kliknięciu powinna zniknąć)
 - [x] przycisk zakupu - zamieniony w pkt.3. na 'Add to basket'
 
-- [ ] Karta powinna zniknąć po wciśnięciu `esc`.
+- [x] Karta powinna zniknąć po wciśnięciu `esc`.
 
 - [x] Po kliknięciu przycisku _Kup_ powinien zostać wyświetlony komunikat o wystąpieniu problemu podczas dokonywania zakupu.
 
