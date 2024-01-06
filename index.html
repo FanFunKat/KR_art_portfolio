@@ -39,14 +39,14 @@
     </section>
     <section id="Examples" class="examples">
       <div class="examples__box">
-        <img src="./image/bride-8182890_1280.jpg" alt="example image" class="example__img">
-        <img src="./image/children-817365_1280.jpg" alt="example image" class="example__img">
-        <img src="./image/liberec-5285846_1280.jpg" alt="example image" class="example__img">
-        <img src="./image/nature-3106213_1280.jpg" alt="example image" class="example__img">
-        <img src="./image/park-7407081_1280.jpg" alt="example image" class="example__img">
-        <img src="./image/woman-1509956_1280.jpg" alt="example image" class="example__img">
-        <img src="./image/girl-2436545_1280.jpg" alt="example image" class="example__img">
-        <img src="./image/cat.jpg" alt="example image" class="example__img">
+        <img src="./image/bride-8182890_1280.jpg" alt="example image" class="example__img" data-info="wedding">
+        <img src="./image/children-817365_1280.jpg" alt="example image" class="example__img" data-info="children">
+        <img src="./image/liberec-5285846_1280.jpg" alt="example image" class="example__img" data-info="city">
+        <img src="./image/nature-3106213_1280.jpg" alt="example image" class="example__img" data-info="wild">
+        <img src="./image/park-7407081_1280.jpg" alt="example image" class="example__img" data-info="landscape">
+        <img src="./image/woman-1509956_1280.jpg" alt="example image" class="example__img" data-info="nature">
+        <img src="./image/girl-2436545_1280.jpg" alt="example image" class="example__img" data-info="portrait">
+        <img src="./image/cat.jpg" alt="example image" class="example__img"data-info="pets">
       </div>
     </section>
     <section id="Pricing" class="pricing">
@@ -85,10 +85,11 @@
       <div class="form_card">
         <div class="form_information">
           <button class="form__close--btn"><i class="fa-solid fa-xmark form-close"></i></button>
-          <h2 class="form__title">Title</h2>
-          <p class="form__price">$10</p>
-          <span class="form__hash">#tag1</span>
-          <span class="form__hash">#tag1</span>
+          <h2 id="formTitle" class="form__title">Title</h2>
+          <p id="formPrice" class="form__price">$10</p>
+          <span id="formHash1" class="form__hash">#tag1</span>
+          <span id="formHash2" class="form__hash">#tag2</span>
+          <span id="formHash3" class="form__hash">#tag3</span>
         </div>
         <button id="formBuy" class="form__buy">Add to basket</button>
       </div>

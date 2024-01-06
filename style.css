@@ -362,11 +362,11 @@ body {
 
 .form__hash {
   display: inline-block;
-  height: 2rem;
+  /* height: 2rem; */
   border: 1px solid var(--background-color-5);
   color: var(--background-color-3);
   border-radius: 2rem;
-  padding: 0.1rem 1rem 0;
+  padding: 0.3rem 0.7rem;
   margin-top: 1rem;
 }
 
