@@ -5,8 +5,7 @@ const cardCloseBtn = document.querySelector(".form__close--btn");
 const errorCard = document.getElementById('errorCard');
 const errorCloseBtn = document.querySelector(".error__close--btn");
 const buyBtn = document.getElementById('formBuy');
-const inputImage = document.querySelector('.form__img')
-const headerCard = document.querySelector('.form__title')
+const inputImage = document.querySelector('.form__img');
 
 import { galery } from './photoInfo.js';
 
@@ -21,32 +20,40 @@ image.forEach((img) => {
     const imageName = img.getAttribute('data-info');
     const imageData = galery[imageName];
 
-    inputImage.src = `${e.target.src}`;
-    inputTitle.textContent = imageData.title;
-    inputPrice.textContent = `$${imageData.price.toFixed(2)}`;
+    const image = inputImage.src = `${e.target.src}`;
+    const title = inputTitle.textContent = imageData.title;
+    const price = inputPrice.textContent = `$${imageData.price.toFixed(2)}`;
     inputHash1.textContent = imageData.hash[0];
     inputHash2.textContent = imageData.hash[1];
     inputHash3.textContent = imageData.hash[2];
 
     main.classList.add('show');
     productCard.classList.add('show');
-  })
+
+    buyBtn.addEventListener('click', () => {
+      const basket = [];
+      const productInfo = { title: title, price: price, imageSrc: image };
+      basket.push(productInfo);
+      const basketJson = JSON.stringify(basket);
+      localStorage.setItem("basketJson", basketJson);
+
+      productCard.classList.remove('show');
+      main.classList.remove('show');
+      // errorCard.classList.add('show');
+    });
+
+    cardCloseBtn.addEventListener('click', (e) => {
+      main.classList.remove('show');
+      productCard.classList.remove('show');
+    });
+
+  });
 });
 
-buyBtn.addEventListener('click', () => {
-  productCard.classList.remove('show');
-  errorCard.classList.add('show');
-});
-
-cardCloseBtn.addEventListener('click', (e) => {
-  main.classList.remove('show');
-  productCard.classList.remove('show');
-});
-
-errorCloseBtn.addEventListener('click', () => {
-  main.classList.remove('show');
-  errorCard.classList.remove('show');
-});
+// errorCloseBtn.addEventListener('click', () => {
+//   main.classList.remove('show');
+//   errorCard.classList.remove('show');
+// });
 
 document.addEventListener('keydown', function (e) {
   if (e.key === 'Escape') {
