@@ -52,7 +52,7 @@ Okienko podglądu zdjęcia powinno zostać zmodyfikowane, by zawierało formular
 - [x] niemodyfikowalną wartością produktu (np. $10),
 - [x] przyciskiem dodania do koszyka.
 
-Po kliknięciu przycisku dodania do koszyka podstawowe informacje o zdjęciu wraz z ceną powinny zostać zapisane w [Local Storage](https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage).
+ - [x] Po kliknięciu przycisku dodania do koszyka podstawowe informacje o zdjęciu wraz z ceną powinny zostać zapisane w [Local Storage](https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage).
 
 ## 4. Złożenie zamówienia
 
