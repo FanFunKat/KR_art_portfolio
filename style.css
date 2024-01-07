@@ -83,11 +83,15 @@ body {
 .nav__item--link {
   font-size: 1.5rem;
   font-weight: 600;
-  padding: 7px 0 5px;
+  padding: 3px 0;
 }
 
 .nav__item--link:hover {
   border-bottom: 3px solid var(--background-color-5);
+}
+
+.basket {
+  display: none;
 }
 
 .main {
