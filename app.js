@@ -33,8 +33,13 @@ image.forEach((img) => {
     buyBtn.addEventListener('click', () => {
       let basket = JSON.parse(localStorage.getItem("basketJson")) || [];
 
-      const productInfo = { title: inputTitle.textContent, price: inputPrice.textContent, imageSrc: inputImage.src };
-      basket.push(productInfo);
+      const existingProductIndex = basket.findIndex(product => product.title === inputTitle.textContent);
+      if (existingProductIndex !== -1) {
+        basket[existingProductIndex].quantity += 1;
+      } else {
+        const productInfo = { title: inputTitle.textContent, price: inputPrice.textContent, imageSrc: inputImage.src, quantity: 1 };
+        basket.push(productInfo);
+      }
 
       const basketJson = JSON.stringify(basket);
       localStorage.setItem("basketJson", basketJson);
