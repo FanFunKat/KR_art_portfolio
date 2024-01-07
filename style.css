@@ -94,6 +94,10 @@ body {
   display: none;
 }
 
+.basket.show {
+  display: block
+}
+
 .main {
   display: flex;
   flex-direction: column;

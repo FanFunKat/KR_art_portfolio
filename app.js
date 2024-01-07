@@ -29,51 +29,37 @@ image.forEach((img) => {
 
     main.classList.add('show');
     productCard.classList.add('show');
-
-    buyBtn.addEventListener('click', () => {
-      let basket = JSON.parse(localStorage.getItem("basketJson")) || [];
-
-      const existingProductIndex = basket.findIndex(product => product.title === inputTitle.textContent);
-      if (existingProductIndex !== -1) {
-        basket[existingProductIndex].quantity += 1;
-      } else {
-        const productInfo = { title: inputTitle.textContent, price: inputPrice.textContent, imageSrc: inputImage.src, quantity: 1 };
-        basket.push(productInfo);
-      }
-
-      const basketJson = JSON.stringify(basket);
-      localStorage.setItem("basketJson", basketJson);
-
-      productCard.classList.remove('show');
-      main.classList.remove('show');
-      // errorCard.classList.add('show');
-
-      updateBasketVisibility();
-    });
-
-    cardCloseBtn.addEventListener('click', (e) => {
-      main.classList.remove('show');
-      productCard.classList.remove('show');
-    });
   });
+});
+
+buyBtn.addEventListener('click', () => {
+  let basket = JSON.parse(localStorage.getItem("basketJson")) || [];
+
+  const existingProductIndex = basket.findIndex(product => product.title === inputTitle.textContent);
+  if (existingProductIndex !== -1) {
+    basket[existingProductIndex].quantity += 1;
+  } else {
+    const productInfo = { title: inputTitle.textContent, price: inputPrice.textContent, imageSrc: inputImage.src, quantity: 1 };
+    basket.push(productInfo);
+  }
+
+  const basketJson = JSON.stringify(basket);
+  localStorage.setItem("basketJson", basketJson);
+
+  productCard.classList.remove('show');
+  main.classList.remove('show');
+  basketLink.classList.add('show');
+});
+
+cardCloseBtn.addEventListener('click', (e) => {
+  main.classList.remove('show');
+  productCard.classList.remove('show');
 });
 
 // errorCloseBtn.addEventListener('click', () => {
 //   main.classList.remove('show');
 //   errorCard.classList.remove('show');
 // });
-
-function updateBasketVisibility() {
-  let basket = JSON.parse(localStorage.getItem("basketJson")) || [];
-
-  if (basket.length > 0) {
-    basketLink.classList.add('basket');
-  } else {
-    basketLink.classList.remove('basket');
-  }
-}
-
-updateBasketVisibility();
 
 document.addEventListener('keydown', function (e) {
   if (e.key === 'Escape') {
