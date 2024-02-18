@@ -1,3 +1,5 @@
+import { styles } from './Gallery.module.css'
+
 const gallery = [
   'image/bride-8182890_1280.jpg',
   'image/children-817365_1280.jpg',
@@ -12,8 +14,8 @@ const gallery = [
 
 export const Gallery = () => {
   return (
-    <section id="Examples" class="examples">
-      {gallery.map((img) => { return <img src={img} key={img} /> })}
+    <section id="Examples" className={styles.examples__box}>
+      {gallery.map((img) => { return <img src={img} key={img} className={styles.examples__img} /> })}
     </section>
   )
 }

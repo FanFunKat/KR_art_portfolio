@@ -10,7 +10,7 @@ function App() {
     <>
       <LandingPage />
       <Gallery />
-      <Pricing />
+      {/* <Pricing /> */}
       <FormImage />
       <Form />
     </>

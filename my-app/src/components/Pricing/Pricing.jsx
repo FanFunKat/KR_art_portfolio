@@ -18,12 +18,14 @@ const offer = [
   }
 ]
 
-export const Pricing = () => {
+export const PricePanel = () => {
   return (
-    offer.map(({ name, price, comdition }) =>
-      return (
-      <Panel key={name} name={name} price={price} conditions={comdition} />
-    )
-    )
+    <div className={styles.pricing__box}>
+      {options.map(({ name, price, condition }) => {
+        return (
+          <Panel key={name} name={name} price={price} condition={condition} />
+        )
+      })}
+    </div>
   )
 }
