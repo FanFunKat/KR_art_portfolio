@@ -3,6 +3,9 @@ import styles from './Form.module.css'
 export const Form = () => {
   return (
     <form className={styles.form__card}>
+      <div className={styles.contactUs}>
+        Contact us
+      </div>
       <div className={styles.form__inputName}>
         <label htmlFor="title">Title:</label>
       </div>
