@@ -1,4 +1,4 @@
-import { styles } from './Gallery.module.css'
+import styles from './Gallery.module.css'
 
 const gallery = [
   'image/bride-8182890_1280.jpg',

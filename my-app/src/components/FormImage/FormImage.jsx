@@ -1,4 +1,4 @@
-import { styles } from './FormImage.module.css'
+import styles from './FormImage.module.css'
 
 export const FormImage = () => {
 
