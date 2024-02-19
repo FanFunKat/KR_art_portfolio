@@ -14,8 +14,8 @@ const gallery = [
 
 export const Gallery = () => {
   return (
-    <section id="Examples" className={styles.examples__box}>
-      {gallery.map((img) => { return <img src={img} key={img} className={styles.examples__img} /> })}
+    <section className={styles.examples__box}>
+      {gallery.map((img) => { return <img src={img} key={img} className={styles.example__img} /> })}
     </section>
   )
 }

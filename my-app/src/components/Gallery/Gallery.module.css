@@ -1,4 +1,5 @@
 .examples__box {
+  width: 70%;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
   justify-content: center;
