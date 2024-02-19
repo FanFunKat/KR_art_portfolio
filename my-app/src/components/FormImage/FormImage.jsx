@@ -3,7 +3,7 @@ import styles from './FormImage.module.css'
 export const FormImage = () => {
 
   return (
-    <form action="javascript:;" className={styles.product__card}>
+    <form className={styles.product__card}>
       <input type="image" alt="cat" src="#" className={styles.form__img} />
       <div className={styles.form_card}>
         <div className={styles.form_information}>
