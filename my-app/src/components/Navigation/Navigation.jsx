@@ -21,21 +21,3 @@ export const Navigation = () => {
     </header>
   );
 }
-
-{/* <header class="header">
-  <div class="header__box">
-    <a href="#LandingPage" class="logo__box">
-      <div class="logo">
-        <img class="logo__img" src="./image/example.svg" alt="logo image example">
-          <p class="logo__name">PhotoToTo</p>
-      </div>
-      <nav class="nav">
-        <ul class="nav__items">
-          <li class="nav__items--item"><a class="nav__item--link" href="#Examples">Examples</a></li>
-          <li class="nav__items--item"><a class="nav__item--link" href="#Pricing">Pricing</a></li>
-          <li class="nav__items--item basket"><a class="nav__item--link" href="#">Basket</a></li>
-        </ul>
-      </nav>
-    </a>
-  </div>
-</header> */}

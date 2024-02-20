@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import styles from './Gallery.module.css'
+import { useNavigate } from 'react-router';
 
 export const Gallery = () => {
   const [gallery, setGallery] = useState([]);
@@ -13,12 +14,17 @@ export const Gallery = () => {
       .then((gallery) => { setGallery(gallery) })
   }, [])
 
+  const navigate = useNavigate();
+
+  const handleClick = (image) => {
+    navigate(`${image.id}`);
+  };
 
   return (
     <>
       {gallery && (
         <section className={styles.examples__box}>
-          {gallery.map((image) => { return <img src={image.src} key={image.id} alt={image.title} className={styles.example__img} /> })}
+          {gallery.map((image) => { return <img src={image.src} key={image.id} alt={image.title} className={styles.example__img} onClick={handleClick} /> })}
         </section>
       )}
     </>

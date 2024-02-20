@@ -1,10 +1,15 @@
 import styles from './FormImage.module.css'
+import { useNavigate, useOutletContext, useParams } from 'react-router';
 
 export const FormImage = () => {
+  let navigate = useNavigate();
+  let { id } = useParams();
+  const gallery = useOutletContext();
+  const selectedImage = gallery.find(image => image.id === id);
 
   return (
     <form className={styles.product__card}>
-      <input type="image" alt="cat" src="#" className={styles.form__img} />
+      <input type="image" alt={selectedImage.title} src={`/public/${selectedImage.src}`} key={selectedImage.id} className={styles.form__img} />
       <div className={styles.form_card}>
         <div className={styles.form_information}>
           <button className={styles.form__closeBtn}><i className="fa-solid fa-xmark form-close"></i></button>

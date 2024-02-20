@@ -14,10 +14,11 @@ function App() {
         <Navigation />
         <Routes>
           <Route path="/" element={<><LandingPage /></>} />
-          <Route path="/gallery" element={<Gallery />} />
+          <Route path="/gallery" element={<Gallery />} >
+            <Route path=":id" element={<FormImage />} />
+          </Route>
           <Route path="/pricing" element={<Pricing />} />
           <Route path="/contact" element={<Form />} />
-          <Route path="/form/:id" element={<FormImage />} />
         </Routes>
       </BrowserRouter>
     </main>
