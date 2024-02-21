@@ -6,7 +6,7 @@ export const Navigation = () => {
       <div className={styles.header__box}>
         <a href="/" className={styles.logo__box}>
           <div className={styles.logo}>
-            <img className={styles.logo__img} src="image/example.svg" alt="logo image example" />
+            <img className={styles.logo__img} src="/image/example.svg" alt="logo image example" />
             <p className={styles.logo__name}>PhotoToTo</p>
           </div>
         </a>
