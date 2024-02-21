@@ -14,19 +14,21 @@ export const FormImage = () => {
   // console.log(selectedImage);
 
   return (
-    <form className={styles.product__card}>
-      <input type="image" alt={selectedImage.title} src={selectedImage.src} key={selectedImage.id} className={styles.form__img} />
-      <div className={styles.form_card}>
-        <div className={styles.form_information}>
-          <button className={styles.form__closeBtn}><i className="fa-solid fa-xmark form-close"></i></button>
-          <h2 className={styles.form__title}>{selectedImage.title}</h2>
-          <p className={styles.form__price}>${selectedImage.price}</p>
-          <span className={styles.form__hash}>{selectedImage.tag1}</span>
-          <span className={styles.form__hash}>{selectedImage.tag2}</span>
-          <span className={styles.form__hash}>{selectedImage.tag3}</span>
+    <section className={styles.product__background}>
+      <form className={styles.product__card}>
+        <input type="image" alt={selectedImage.title} src={selectedImage.src} key={selectedImage.id} className={styles.form__img} />
+        <div className={styles.form_card}>
+          <div className={styles.form_information}>
+            <button className={styles.form__closeBtn}><i className="fa-solid fa-xmark form-close"></i></button>
+            <h2 className={styles.form__title}>{selectedImage.title}</h2>
+            <p className={styles.form__price}>${selectedImage.price}</p>
+            <span className={styles.form__hash}>{selectedImage.tag1}</span>
+            <span className={styles.form__hash}>{selectedImage.tag2}</span>
+            <span className={styles.form__hash}>{selectedImage.tag3}</span>
+          </div>
+          <button type="submit" className={styles.form__buy}>Add to basket</button>
         </div>
-        <button type="submit" className={styles.form__buy}>Add to basket</button>
-      </div>
-    </form>
+      </form>
+    </section>
   )
 }
