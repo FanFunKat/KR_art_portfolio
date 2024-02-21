@@ -6,7 +6,7 @@
       "tag1": "#bride",
       "tag2": "#groom",
       "tag3": "#couple",
-      "src": "image/bride-8182890_1280.jpg"
+      "src": "/image/bride-8182890_1280.jpg"
     },
     {
       "id": 2,
@@ -15,7 +15,7 @@
       "tag1": "#smile",
       "tag2": "#siblings",
       "tag3": "#family",
-      "src": "image/children-817365_1280.jpg"
+      "src": "/image/children-817365_1280.jpg"
     },
     {
       "id": 3,
@@ -24,7 +24,7 @@
       "tag1": "#architecture",
       "tag2": "#building",
       "tag3": "#details",
-      "src": "image/liberec-5285846_1280.jpg"
+      "src": "/image/liberec-5285846_1280.jpg"
     },
     {
       "id": 4,
@@ -33,7 +33,7 @@
       "tag1": "#nature",
       "tag2": "#wild",
       "tag3": "#tiger",
-      "src": "image/woman-1509956_1280.jpg"
+      "src": "/image/woman-1509956_1280.jpg"
     },
     {
       "id": 5,
@@ -42,7 +42,7 @@
       "tag1": "#Japan",
       "tag2": "#garden",
       "tag3": "#view",
-      "src": "image/park-7407081_1280.jpg"
+      "src": "/image/park-7407081_1280.jpg"
     },
     {
       "id": 6,
@@ -51,7 +51,7 @@
       "tag1": "#happy",
       "tag2": "#nature",
       "tag3": "#relax",
-      "src": "image/nature-3106213_1280.jpg"
+      "src": "/image/nature-3106213_1280.jpg"
     },
     {
       "id": 7,
@@ -60,7 +60,7 @@
       "tag1": "#portrait",
       "tag2": "#jasmine",
       "tag3": "#beauty",
-      "src": "image/girl-2436545_1280.jpg"
+      "src": "/image/girl-2436545_1280.jpg"
     },
     {
       "id": 8,
@@ -69,6 +69,6 @@
       "tag1": "#pet",
       "tag2": "#animal",
       "tag3": "#cute",
-      "src": "image/cat.jpg"
+      "src": "/image/cat.jpg"
     }
   ]

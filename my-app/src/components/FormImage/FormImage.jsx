@@ -15,7 +15,7 @@ export const FormImage = () => {
 
   return (
     <form className={styles.product__card}>
-      <input type="image" alt={selectedImage.title} src={`/${selectedImage.src}`} key={selectedImage.id} className={styles.form__img} />
+      <input type="image" alt={selectedImage.title} src={selectedImage.src} key={selectedImage.id} className={styles.form__img} />
       <div className={styles.form_card}>
         <div className={styles.form_information}>
           <button className={styles.form__closeBtn}><i className="fa-solid fa-xmark form-close"></i></button>
