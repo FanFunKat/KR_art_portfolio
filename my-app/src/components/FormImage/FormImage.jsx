@@ -1,11 +1,14 @@
 import styles from './FormImage.module.css'
-import { useNavigate, useOutletContext, useParams } from 'react-router';
+import { useOutletContext, useParams } from 'react-router';
 
 export const FormImage = () => {
-  let navigate = useNavigate();
   let { id } = useParams();
   const gallery = useOutletContext();
   const selectedImage = gallery.find(image => image.id === id);
+
+  if (!selectedImage) {
+    return <div>Loading...</div>;
+  }
 
   return (
     <form className={styles.product__card}>
