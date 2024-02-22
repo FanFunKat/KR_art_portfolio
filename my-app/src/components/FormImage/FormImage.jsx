@@ -23,9 +23,7 @@ export const FormImage = () => {
             <Link to='/gallery' className={styles.form__closeBtn}><i className="fa-solid fa-xmark form-close"></i></Link>
             <h2 className={styles.form__title}>{selectedImage.title}</h2>
             <p className={styles.form__price}>${selectedImage.price}</p>
-            <span className={styles.form__hash}>{selectedImage.tag1}</span>
-            <span className={styles.form__hash}>{selectedImage.tag2}</span>
-            <span className={styles.form__hash}>{selectedImage.tag3}</span>
+            {selectedImage.tag.map((element) => { return <span key={element} className={styles.form__hash}>{element}</span> })}
           </div>
           <Link to='/gallery' type="submit" className={styles.form__buy}>Add to basket</Link>
         </div>
