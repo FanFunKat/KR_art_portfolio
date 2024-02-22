@@ -3,72 +3,87 @@
       "id": 1,
       "title": "The wedding",
       "price": 10,
-      "tag1": "#bride",
-      "tag2": "#groom",
-      "tag3": "#couple",
+      "tag": [
+        "#bride",
+        "#groom",
+        "#couple"
+      ],
       "src": "/image/bride-8182890_1280.jpg"
     },
     {
       "id": 2,
       "title": "The portrait of children",
       "price": 10,
-      "tag1": "#smile",
-      "tag2": "#siblings",
-      "tag3": "#family",
+      "tag": [
+        "#siblings",
+        "#family"
+      ],
       "src": "/image/children-817365_1280.jpg"
     },
     {
       "id": 3,
       "title": "The city in gray",
       "price": 10,
-      "tag1": "#architecture",
-      "tag2": "#building",
-      "tag3": "#details",
+      "tag": [
+        "#architecture",
+        "#building",
+        "#details"
+      ],
       "src": "/image/liberec-5285846_1280.jpg"
     },
     {
       "id": 4,
       "title": "The Woman with the Tiger",
       "price": 10,
-      "tag1": "#nature",
-      "tag2": "#wild",
-      "tag3": "#tiger",
+      "tag": [
+        "#nature",
+        "#wild",
+        "#tiger"
+      ],
       "src": "/image/woman-1509956_1280.jpg"
     },
     {
       "id": 5,
       "title": "Japanese garden",
       "price": 10,
-      "tag1": "#Japan",
-      "tag2": "#garden",
-      "tag3": "#view",
+      "tag": [
+        "#Japan",
+        "#garden",
+        "#view"
+      ],
       "src": "/image/park-7407081_1280.jpg"
     },
     {
       "id": 6,
       "title": "In nature",
       "price": 10,
-      "tag1": "#happy",
-      "tag2": "#nature",
-      "tag3": "#relax",
+      "tag": [
+        "#happy",
+        "#nature",
+        "#relax"
+      ],
       "src": "/image/nature-3106213_1280.jpg"
     },
     {
       "id": 7,
       "title": "Girl in flowers",
       "price": 10,
-      "tag1": "#portrait",
-      "tag2": "#jasmine",
-      "tag3": "#beauty",
+      "tag": [
+        "#portrait",
+        "#jasmine",
+        "#beauty"
+      ],
       "src": "/image/girl-2436545_1280.jpg"
     },
     {
       "id": 8,
       "title": "Cat",
       "price": 10,
-      "tag1": "#pet",
-      "tag2": "#animal",
-      "tag3": "#cute",
+      "tag": [
+        "#pet",
+        "#animal",
+        "#cute"
+      ],
       "src": "/image/cat.jpg"
     }
   ]
