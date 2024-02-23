@@ -14,7 +14,7 @@ export const Gallery = () => {
       .then((gallery) => { setGallery(gallery) })
   }, [])
 
-  const navigate = useNavigate();
+  let navigate = useNavigate();
 
   const handleClick = (image) => {
     navigate(`${image.id}`);

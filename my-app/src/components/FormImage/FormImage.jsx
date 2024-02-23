@@ -8,10 +8,6 @@ export const FormImage = () => {
   const gallery = useOutletContext();
   const selectedImage = gallery.find(image => image.id == id);
 
-  if (!selectedImage) {
-    return <div>Loading...</div>;
-  }
-
   // console.log(selectedImage);
 
   return (
